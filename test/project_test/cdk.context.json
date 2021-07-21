@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=493514437119:domainName=cdk.emo.d.kodehyve.com:region=eu-west-1": {
+    "Id": "/hostedzone/Z09776671BQPICUTGSXK4",
+    "Name": "cdk.emo.d.kodehyve.com."
+  },
+  "hosted-zone:account=493514437119:domainName=emo.d.kodehyve.com:region=eu-west-1": {
+    "Id": "/hostedzone/Z0776375ZFFNGQ4K01TF",
+    "Name": "emo.d.kodehyve.com."
+  }
+}
