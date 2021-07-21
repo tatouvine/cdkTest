@@ -1,25 +1,39 @@
 
 # 🏗️ Project Erwin Morel to discover CDK
 
-> The next generation tool for real estate developer
 
-Collaboration tool for real estate developer to do everything in one place with all stakeholders
-
-## 🛠 Prerequisites ##
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-- [NodeJS](https://nodejs.org/en/download/)
-- [AWS Profile configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
-- [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install)
-
-
-## 🚀 Deploy Stacks ##
-
-Install dependencies
+Configure your aws
 ```
-make install
+aws configure
 ```  
-
-Deploy
 ```
-make deploy AWS_PROFILE=<aws_profile> CUSTOMER_ID=<customer_id>
-``` 
+[default]
+region=eu-west-1
+```
+```
+[default]
+aws_access_key_id=YOUR_AWS_ACESS_KEY_ID
+aws_secret_access_key=YOUR_AWS_SECRET_ACCES_KEY
+```
+Install CDK
+```
+npm install -g aws-cdk
+```
+Check if you have install CDK
+```
+cdk --version
+```
+Bootstrap
+```
+cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+```
+
+You can check your modificcation if you run this:
+```
+cdk diff
+```
+
+You can push your modification in your account AWS if you run this:
+```
+cdk deploy
+```
